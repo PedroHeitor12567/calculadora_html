@@ -1,26 +1,26 @@
 function insert(num)
 {
-    var numero = document.getElementById('resul').innerHTML;
-    document.getElementById('resul').innerHTML = numero + num;
+    var numero = document.getElementById('screen').innerHTML;
+    document.getElementById('screen').innerHTML = numero + num;
 }
 function clean()
 {
-    document.getElementById('resul').innerHTML = "";
+    document.getElementById('screen').innerHTML = "";
 }
 function back()
 {
-    var resultado = document.getElementById('resul').innerHTML;
-    document.getElementById('resul').innerHTML = resultado.substring(0, resultado.length -1);
+    var resultado = document.getElementById('screen').innerHTML;
+    document.getElementById('screen').innerHTML = resultado.substring(0, resultado.length -1);
 }
 function calcular()
 {
-    var resultado = document.getElementById('resul').innerHTML;
+    var resultado = document.getElementById('screen').innerHTML;
     if(resultado)
     {
-        document.getElementById('resul').innerHTML = eval(resultado);
+        document.getElementById('screen').innerHTML = eval(resultado);
     }
     else
     {
-        document.getElementById('resul').innerHTML = "Campo vazio";
+        document.getElementById('screen').innerHTML = "Campo vazio";
     }
 }
